@@ -37,6 +37,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+//This the part of Gaudreau: don't touch!!!!!!!!!!
 
 module.exports = app;
 // this is a test for sync
