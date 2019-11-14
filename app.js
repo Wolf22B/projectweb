@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-//test branch
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
@@ -35,11 +35,8 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('pages/error.ejs');
 });
-//This the part of Gaudreau: don't touch!!!!!!!!!!
+
 
 module.exports = app;
-// this is a test for sync
-//sierra echo November Delta November Uniform Delta Echo Sierra
-// this is another test you moron im doing this for fun
